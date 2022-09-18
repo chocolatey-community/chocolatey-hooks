@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cleanup-desktop-shortcuts.hook</id>
+    <version>0.0.1-pre</version>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</packageSourceUrl>
+    <owners>Chocolatey Community, TheCakeIsNaOH</owners>
+    <title>Cleanup Desktop Shortcuts (Hook)</title>
+    <authors>Chocolatey Community, TheCakeIsNaOH</authors>
+    <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</projectUrl>
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/cleanup-desktop-shortcuts.hook.png</iconUrl>-->
+    <copyright>2022 Chocolatey Community</copyright>
+    <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</projectSourceUrl>
+    <!--<docsUrl>TODO</docsUrl>-->
+    <!--<mailingListUrl>TODO</mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/chocolatey-community/chocolatey-hooks/issues</bugTrackerUrl>
+    <tags>Shortcuts Hook</tags>
+    <summary>Remove desktop shortcuts created while installing packages.</summary>
+    <description>This hook package adds scripts that remove desktop shortcuts that are added to the global
+and user desktops during the process of installing Chocolatey packages. This is accomplished via a pre install
+hook that gets prexisting desktop shortcuts before install, and a post install hook that removes any shortcuts
+added while the `chocolateyInstall.ps1` is running. 
+
+## Warning
+Any shortcuts created outside of Chocolatey while a `chocolateyInstall.ps1` is running, may be removed in addition
+to any shortcuts created by the package. This is because this hook checks for all shortcuts added to the desktop,
+and does not have a way of filtering to only those that are created by the package.</description>
+    <releaseNotes>0.0.1-pre: Initial Release</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="hook\**" target="hook" />
+  </files>
+</package>
