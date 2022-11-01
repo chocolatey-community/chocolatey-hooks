@@ -8,12 +8,14 @@ if ([string]::IsNullOrEmpty([Environment]::GetFolderPath("DesktopDirectory"))) {
     return
 }
 
-[array]$global:cleanup_desktop_shortcuts_hook_pre_shortcuts = Get-Childitem -Path ([environment]::GetFolderPath("DesktopDirectory")) -Filter "*.lnk"
+$global:CleanupDesktopShortcutsHook = @{
+    PreShortcuts = @(Get-Childitem -Path ([environment]::GetFolderPath("DesktopDirectory")) -Filter "*.lnk")
+}
 
 if (Test-ProcessAdminRights) {
     if ([string]::IsNullOrEmpty([Environment]::GetFolderPath("CommonDesktopDirectory"))) {
         Write-Warning "System wide desktop directory cannot be found, something went wrong."
         return
     }
-    $global:cleanup_desktop_shortcuts_hook_pre_shortcuts += Get-Childitem -Path ([environment]::GetFolderPath("CommonDesktopDirectory")) -Filter "*.lnk"
+    $global:CleanupDesktopShortcutsHook.PreShortcuts += @(Get-Childitem -Path ([environment]::GetFolderPath("CommonDesktopDirectory")) -Filter "*.lnk")
 }
