@@ -4,16 +4,16 @@
   <metadata>
     <id>cleanup-desktop-shortcuts.hook</id>
     <version>0.1.0-alpha-20221103</version>
-    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</packageSourceUrl>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</packageSourceUrl>
     <owners>Chocolatey Community, TheCakeIsNaOH</owners>
     <title>Cleanup Desktop Shortcuts (Hook)</title>
     <authors>Chocolatey Community, TheCakeIsNaOH</authors>
-    <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</projectUrl>
+    <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</projectUrl>
     <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/cleanup-desktop-shortcuts.hook.png</iconUrl>-->
     <copyright>2022 Chocolatey Community</copyright>
-    <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</projectSourceUrl>
+    <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</projectSourceUrl>
     <!--<docsUrl>TODO</docsUrl>-->
     <!--<mailingListUrl>TODO</mailingListUrl>-->
     <bugTrackerUrl>https://github.com/chocolatey-community/chocolatey-hooks/issues</bugTrackerUrl>
