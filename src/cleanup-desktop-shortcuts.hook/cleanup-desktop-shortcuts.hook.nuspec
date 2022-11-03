@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cleanup-desktop-shortcuts.hook</id>
-    <version>0.0.1-pre</version>
+    <version>0.1.0-alpha-20221103</version>
     <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/src/cleanup-desktop-shortcuts.hook</packageSourceUrl>
     <owners>Chocolatey Community, TheCakeIsNaOH</owners>
     <title>Cleanup Desktop Shortcuts (Hook)</title>
