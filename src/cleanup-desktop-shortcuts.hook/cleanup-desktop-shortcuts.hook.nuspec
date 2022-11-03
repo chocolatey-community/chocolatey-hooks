@@ -28,7 +28,7 @@ added while the `chocolateyInstall.ps1` is running.
 Any shortcuts created outside of Chocolatey while a `chocolateyInstall.ps1` is running, may be removed in addition
 to any shortcuts created by the package. This is because this hook checks for all shortcuts added to the desktop,
 and does not have a way of filtering to only those that are created by the package.</description>
-    <releaseNotes>0.0.1-pre: Initial Release</releaseNotes>
+    <releaseNotes>0.1.0-alpha-20221103: Initial Release</releaseNotes>
     <dependencies>
       <dependency id="chocolatey" version="1.2.0" />
     </dependencies>
