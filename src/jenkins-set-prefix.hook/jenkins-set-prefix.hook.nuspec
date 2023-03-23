@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jenkins-set-prefix.hook</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/jenkins-set-prefix.hook</packageSourceUrl>
+    <owners>Chocolatey Community, jpruskin</owners>
+    <title>Set Jenkins Prefix (Hook)</title>
+    <authors>Chocolatey Community, jpruskin</authors>
+    <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/jenkins-set-prefix.hook</projectUrl>
+    <copyright>2023 Chocolatey Community</copyright>
+    <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/jenkins-set-prefix.hook</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/chocolatey-community/chocolatey-hooks/issues</bugTrackerUrl>
+    <tags>Jenkins Hook</tags>
+    <summary>Update Jenkins installations to use a Prefix.</summary>
+    <description>Due to the way Jenkins' MSI installs, changes to the Jenkins.xml configuration file can be unset (though backed up).
+
+This hook sets the Prefix value after every installation of Jenkins, ensuring that paths won't break unexpectedly.
+
+## Package Parameters
+
+* `/Prefix` - Sets the value of the prefix to use. Defaults to `jenkins`.
+
+These parameters can be passed as follows:
+
+`choco install jenkins-set-prefix.hook --parameters="/Prefix=ci"`</description>
+    <dependencies>
+      <dependency id="chocolatey" version="1.2.0" /><!-- Required for Hooks to exist -->
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="hook\**" target="hook" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
