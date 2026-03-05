@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cleanup-desktop-shortcuts.hook</id>
-    <version>0.1.0-alpha-20221103</version>
+    <version>0.1.0</version>
     <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</packageSourceUrl>
     <owners>Chocolatey Community, TheCakeIsNaOH</owners>
     <title>Cleanup Desktop Shortcuts (Hook)</title>
     <authors>Chocolatey Community, TheCakeIsNaOH</authors>
     <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</projectUrl>
     <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/cleanup-desktop-shortcuts.hook.png</iconUrl>-->
-    <copyright>2022 Chocolatey Community</copyright>
+    <copyright>2022-2026 Chocolatey Community</copyright>
     <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/cleanup-desktop-shortcuts.hook</projectSourceUrl>
@@ -28,7 +28,7 @@ added while the `chocolateyInstall.ps1` is running.
 Any shortcuts created outside of Chocolatey while a `chocolateyInstall.ps1` is running, may be removed in addition
 to any shortcuts created by the package. This is because this hook checks for all shortcuts added to the desktop,
 and does not have a way of filtering to only those that are created by the package.</description>
-    <releaseNotes>0.1.0-alpha-20221103: Initial Release</releaseNotes>
+    <releaseNotes>0.1.0: Initial Stable Release</releaseNotes>
     <dependencies>
       <dependency id="chocolatey" version="1.2.0" />
     </dependencies>
