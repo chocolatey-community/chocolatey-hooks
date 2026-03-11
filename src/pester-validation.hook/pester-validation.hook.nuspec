@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pester-validation.hook</id>
+    <version>0.1.0-alpha-20231801</version>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/pester-validation.hook</packageSourceUrl>
+    <owners>Chocolatey Community, steviecoaster</owners>
+    <title>Pester Validation (Hook)</title>
+    <authors>Chocolatey Community, steviecoaster</authors>
+    <projectUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/pester-validation.hook</projectUrl>
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/cleanup-desktop-shortcuts.hook.png</iconUrl>-->
+    <copyright>2023 Chocolatey Community</copyright>
+    <licenseUrl>https://github.com/chocolatey-community/chocolatey-hooks/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/chocolatey-community/chocolatey-hooks/tree/main/src/pester-validation.hook</projectSourceUrl>
+    <!--<docsUrl>TODO</docsUrl>-->
+    <!--<mailingListUrl>TODO</mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/chocolatey-community/chocolatey-hooks/issues</bugTrackerUrl>
+    <tags>Pester Validation Hook</tags>
+    <summary>Execute pester tests against package post install</summary>
+    <description>This hook package adds scripts that execute Pester tests for a package after the execution of `chocolateyInstall.ps1`. 
+    To run validation include pester tests inside a `tests` folder inside the package.
+
+    ## Package Parameters:
+
+    - `SkipPackageValidation`: skips the execution of pester tests after the installation of a package
+
+    ## Examples:
+
+    `choco install testpackage -y`
+    This example will execute any pester tests included in the tests folder of the package
+
+    `choco install testpackage -y --package-parameters="'/SkipPackageValidation'"
+    This example will skip the execution of any pester tests included in the tests folder of the package
+    </description>
+    <releaseNotes>0.1.0-alpha-20231801: Initial Release</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="1.2.0" />
+      <dependency id="pester" version="5.4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="hook\**" target="hook" />
+  </files>
+</package>
